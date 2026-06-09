@@ -1,0 +1,7 @@
+# Development files
+.DS_Store
+*.log
+
+# Git keep the main structure but we need to be careful with assets
+# Assets are included (they're the site content)
+# This file just prevents accidental commits of temp files

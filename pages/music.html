@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Music by AkshUlly InnOcent - Hand-written from prison. Lyrics, melody, and message — all Dallas." />
+  <title>Music - AkshUlly InnOcent</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head><body style="background:#0b0b0b;">
+  <nav class="nav">
+    <a href="/" class="brand">
+      <div class="brand" style="width:40px;height:40px;border:2px solid #00FFFF;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#00FFFF;font-weight:700;font-size:22px;box-shadow:0 0 15px rgba(0,255,255,0.4);">A</div>
+      <div class="brand-text">
+        <div class="rocksalt brand-name">AkshUlly <span class="cyan">InnOcent</span></div>
+        <div class="brand-sub">Official Portal</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="/pages/music.html" class="nav-btn active">Music</a>
+      <a href="/" class="nav-btn">Main Page</a>
+      <a href="/pages/files.html" class="nav-btn">Case Files</a>
+    </div>
+  </nav>
+  <main class="main">
+    <div style="text-align:center;margin-bottom:24px;">
+      <h1 style="font-family:'Berkshire Swash',cursive;font-size:clamp(2rem,5vw,3rem);margin:0;color:#fafafa;">AkshUlly InnOcent Music</h1>
+      <div style="width:60px;height:2px;background:rgba(0,255,255,0.5);margin:12px auto 0;"></div>
+      <p style="color:#a1a1aa;font-family:'Inter',sans-serif;font-size:14px;margin-top:12px;max-width:720px;margin-left:auto;margin-right:auto;">Hand-written from prison. Lyrics, melody, and message — all Dallas. Tap any track to play.</p>
+    </div>
+
+    <div class="music-grid" style="display:grid;grid-template-columns:1.4fr 1fr;gap:20px;align-items:start;">
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div class="card">
+          <div class="card-header">Songs (24)</div>
+          <div class="custom-scrollbar" style="max-height:600px;overflow-y:auto;" id="songs-list">
+            <!-- Songs will be populated by music.js -->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">Podcasts</div>
+          <div class="podcasts-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px;" id="podcasts-list">
+            <!-- Podcasts will be populated by music.js -->
+          </div>
+        </div>
+      </div>
+
+      <div class="music-side" style="position:sticky;top:80px;">
+        <div class="card">
+          <div class="card-header">Who is AkshUlly InnOcent?</div>
+          <div class="custom-scrollbar" style="max-height:700px;overflow-y:auto;padding:16px 18px;color:#d4d4d8;font-family:'Inter',sans-serif;font-size:14px;line-height:1.7;white-space:pre-wrap;" id="bio-text">
+            AkshUlly InnOcent is the unfiltered voice of Dallas Norton — a 40-year-old Oklahoma man who spends the better part of every day writing legal briefs, reading case opinions, and studying law.
+He isn' exactly a lawyer or law student, although by definition he is both. Betrayed by private defense counsel and ignored by 3 sequential State-appointed Appellate Attorneys, his philosophy is: he certainly can't do any worse. No matter how much they care, they don't care about him or his case like he does. So he is becoming a Pro-se Power-House the corrupt courts have to hate.
+When not memorizing citations, he writes lyrical visualizations — songs — just to try to get someone to pay attention.
+Wrongfully convicted in 2022 of crimes that documentary evidence, shifting accusations, and suppressed timelines prove were physically impossible to commit, Dallas now writes from a prison cell with nothing but a pen, paper, and an unbreakable will.
+Just like his legal filings, every bar is hand-written and mailed out — the legal stuff to be filed, the songs to a friend who turns his words into music.
+Blending raw country soul with hard-hitting rap and an occasional touch of alt-rock, his songs are equal parts battle cry and memory: tracks about stolen freedom, corrupt courtrooms, and the family he misses sit alongside anthems of small-town life, dirt roads, personal struggles, and the stark, sometimes violent reality of prison life. Each song is a piece of the man.
+Because he can't step to a microphone himself, Dallas's music uses today's tools the same way legends once used tape machines and Auto-Tune: his original lyrics are brought to life through AI, with every prompt, melody, and vocal tone carefully shaped until approved by him — until the song you hear unmistakably conveys the intended message.
+Dallas is proud to be transparent about his struggles, his life, and about using AI. His view: AI is just the new studio; the heart, the truth, and every single word are 100% his.
+This isn't just music. Some songs are for fun. Others express personal struggles. The rest are evidence set to a beat — a call for anyone with a conscience to listen closer, because an innocent man is screaming through the speakers, and all he needs is for the right people to finally hear him.
+Dallas Norton is AkshUlly InnOcent. Actually. Innocent. Actually listening?
+          </div>
+          <div style="padding:12px 18px;border-top:1px solid rgba(255,255,255,0.05);display:flex;flex-direction:column;gap:6px;font-family:'Inter',sans-serif;font-size:13px;">
+            <div><span style="color:#71717a;">Origin: </span><span style="color:#fafafa;">Cleveland County, OK</span></div>
+            <div><span style="color:#71717a;">Status: </span><span class="cyan" style="font-weight:600;">Wrongfully Incarcerated</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <div class="rocksalt footer-name">AkshUlly <span class="cyan">InnOcent</span></div>
+      <div class="footer-links">
+        <a href="/" class="footer-link">Main Page</a>
+        <a href="/pages/music.html" class="footer-link">Music</a>
+        <a href="/pages/files.html" class="footer-link">Case Files</a>
+      </div>
+    </div>
+    <div class="footer-legal">© 2026 AkshUlly InnOcent · Case No. CF-2019-1273 · Cleveland County, OK</div>
+  </footer>
+
+  <audio id="audio-player" style="display:none;"></audio>
+  <script src="/lib/music.js"></script>
+</body>
+</html>

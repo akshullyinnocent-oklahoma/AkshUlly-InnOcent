@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case files - The Official Documents: All transcripts, briefs, and orders from the Cleveland County case CF-2019-1273." />
+  <title>Case Files - AkshUlly InnOcent</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head><body style="background:#0b0b0b;">
+  <nav class="nav">
+    <a href="/" class="brand">
+      <div class="brand-text">
+        <div class="rocksalt brand-name">AkshUlly <span class="cyan">InnOcent</span></div>
+        <div class="brand-sub">The Compilation</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-btn">Main Page</a>
+      <a href="/pages/music.html" class="nav-btn">Music</a>
+      <a href="/pages/files.html" class="nav-btn active">Case Files</a>
+    </div>
+  </nav>
+
+  <main class="main">
+    <header style="text-align:center;padding:1.5rem 0 1rem;">
+      <div class="badge"><span class="pulse"></span> When you have nothing to hide - You release it ALL.</div>
+      <h1 class="rocksalt" style="font-family:'Berkshire Swash',cursive;font-size:clamp(2rem,5vw,3.2rem);margin:0.2rem 0 0.5rem;color:#fafafa;">The Official Documents</h1>
+      <p style="font-family:'DM Sans',sans-serif;color:#a1a1aa;font-size:13px;letter-spacing:0.2em;text-transform:uppercase;">Cleveland County · Case CF-2019-1273 · <span id="doc-count">27</span> documents</p>
+      <div style="height:2px;max-width:800px;width:80%;margin:1.2rem auto 0.5rem;background:linear-gradient(90deg,transparent 0%,#C0C2C9 30%,rgba(255,255,255,0.4) 50%,#C0C2C9 70%,transparent 100%);border-radius:999px;box-shadow:0 0 25px rgba(192,194,201,0.4);"></div>
+    </header>
+
+    <div class="files-layout" style="display:grid;grid-template-columns:340px 1fr;gap:1.25rem;align-items:start;">
+      <!-- File list -->
+      <aside class="files-list" style="background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;backdrop-filter:blur(8px);display:flex;flex-direction:column;max-height:calc(100vh - 180px);"><div style="padding:12px 14px;border-bottom:1px solid rgba(255,255,255,0.08);">
+        <span style="font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(0,255,255,0.7);">Documents (<span id="doc-filter-count">27</span>)</span>
+      </div>
+      <input type="text" placeholder="Search documents..." id="search-input" style="margin:10px 12px;padding:8px 10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;color:#fafafa;font-size:12px;font-family:'DM Sans',sans-serif;outline:none;" />
+      <div class="custom-scrollbar" style="overflow-y:auto;flex:1;" id="doc-list">
+        <!-- Populated by files.js -->
+      </div>
+    </aside>
+
+    <!-- Viewer -->
+    <section class="pdf-viewer" style="background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;backdrop-filter:blur(8px);display:flex;flex-direction:column;min-height:600px;max-height:calc(100vh - 180px);">
+      <div style="padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;gap:12;flex-wrap:wrap;">
+        <div style="font-family:'DM Sans',sans-serif;font-size:12px;color:#d4d4d8;display:flex;align-items:center;gap:8;flex-wrap:wrap;" id="viewer-title">Select a document from the list</div>
+        <div style="display:inline-flex;align-items:center;gap:6;padding:4px 10px;border:1px solid rgba(0,255,255,0.3);border-radius:999px;font-family:monospace;font-size:9px;letter-spacing:0.1em;color:#00FFFF;">
+          <span style="width:6px;height:6px;background:#00FFFF;border-radius:50%;display:inline-block;"></span> Protected · View Only
+        </div>
+      </div>
+
+      <div class="viewer-body custom-scrollbar" style="flex:1;overflow-y:auto;overflow-x:hidden;padding:1rem;background:#0a0a0a;" id="viewer-body">
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;min-height:400px;color:#71717a;font-family:'DM Sans',sans-serif;font-size:13px;">
+          <div style="font-size:28px;margin-bottom:12px;">📄</div>
+          Select any document on the left to view its pages.
+        </div>
+      </div>
+    </section>
+  </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <div class="rocksalt footer-name">AkshUlly <span class="cyan">InnOcent</span></div>
+      <div style="display:flex;gap:16;">
+        <a href="/" class="footer-link">Main Page</a>
+        <a href="/pages/music.html" class="footer-link">Music</a>
+        <a href="/pages/files.html" class="footer-link">Case Files</a>
+      </div>
+    </div>
+    <div class="footer-legal">Cleveland County, Oklahoma · Case CF-2019-1273 · OK-DOC-RECORD</div>
+  </footer>
+
+  <script src="/lib/files.js"></script>
+</body>
+</html>
