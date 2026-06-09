@@ -65,3 +65,14 @@ npm install -g serve && serve .
 - The document viewer uses pre-rendered JPG images instead of PDFs for browser compatibility
 - Images are lazy-loaded for performance
 - No server-side code required - all client-side JavaScript
+- **Assets (374MB) are too large for GitHub's 100MB limit** - they're deployed via Netlify CLI
+- For GitHub-based auto-deploys, consider:
+  - Git LFS for assets (`git lfs install` + track `*.mp3`, `*.jpg`)
+  - External storage (S3, Azure Blob) with asset URLs
+  - Netlify Large Media for large files
+
+## Deployment Status
+
+- **Live at**: https://akshully-innocent.netlify.app
+- **GitHub repo**: https://github.com/akshullyinnocent-oklahoma/AkshUlly-InnOcent
+- **Assets deployed separately** via Netlify CLI due to size
